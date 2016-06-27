@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body id="<%= page %>">
+    <% include partials/template/header.ejs %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <% include partials/content/chat.ejs %>
+        </div><!-- primary -->
+      </div>
+    </div><!-- container -->
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>
