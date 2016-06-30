@@ -1,0 +1,227 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100, 300);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #C1343F;
+}
+
+p {
+  font-family: inherit;
+  font-weight: 100;
+}
+
+
+li {
+  font-family: inherit;
+  font-weight: 100;
+}
+
+
+a {
+  color: #DD4F53;
+}
+
+/**  Header Navigation **/
+
+header {
+  font-size: 2rem;
+}
+
+header .jumbotron {
+  height: 40vh;
+  margin-bottom: 0;
+  background: url(../images/misc/background.jpg) no-repeat 100% 5%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/**  Navbar **/
+
+header .navbar {
+  background: #CF5565;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+header .navbar-default {
+  border: none;
+  border-radius: 0;
+  padding: 10px 0;
+}
+
+.navbar-inverse {
+  border: 0;
+}
+
+
+header .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+header .navbar-inverse .navbar-brand {
+  color: white;
+}
+
+header .navbar-inverse .navbar-nav>li>a {
+  color: white;
+} 
+
+.maincontent {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+.sidebar {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 130%;
+}
+
+.sidebar .sidebar-title {
+  font-size: 1.5em;
+}
+
+.sidebar .sidebar-body li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    line-height: 160%;
+  }
+  .sidebar .sidebar-title {
+    font-size: 2em;
+  }
+}
+
+.speakerslist {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+#speakerList .speakerslist-img {
+  margin-right: 20px;
+}
+
+.speakerslist-title {
+  font-size: 1.7em;
+}
+
+#home .speakerslist-title {
+  font-size: 1.5em;
+}
+
+#speakerDetail .speakerslist-title {
+  font-size: 2.4em;
+}
+
+#speakerDetail .speakerslist-img {
+  margin: 20px 0;
+}
+
+.form-control {
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.chat-form {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.jumbotron {
+  padding: 20px 0;
+  background-color: #FFEB8B;
+}
+
+/**  chat-display **/
+
+.chat-display {
+  min-height: 150px;
+  max-height: 40vh;
+  overflow: scroll;
+  font-size: 1.2em;
+}
+
+.chat-display p {
+  font-size: .9em;
+  padding: 0 10px;
+}
+
+.feedback, .feedback-form-title {
+  font-size: 2rem;
+}
+
+.feedback-form {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+
+.feedback-title {
+  font-size: 1.2em;
+}
+
+.feedback-form-title {
+  font-size: 2em;
+}
+
+.feedback-name {
+  font-size: .6em;
+  font-weight: 100;
+}
+
+.feedback-message {
+  font-weight: 100;
+  font-size: .9em;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+.feedback-item {
+  border-bottom: 1px solid gray;
+  padding: 8px 0;
+}
+
+.feedback-item:last-of-type {
+  border-bottom: none;
+}
+
+
+/**  pixgrid **/
+
+.pixgrid {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.pixgrid img {
+  display: block;
+  padding: 5px;
+  float: left;
+  width: 33.33%;
+  border-radius: 10px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .pixgrid img {
+    width: 20%;
+  }
+}
