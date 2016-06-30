@@ -4,8 +4,7 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "./app/app.js",
   "scripts": {
-    "start": "NODE_ENV=development PORT=8000 nodemon -e css,ejs,js,json --watch app app/app.js --ignore 'feedback.json' ",
-    "prod": "NODE_ENV=production nodemon app/app.js"
+    "start": "nodemon -e css,ejs,js,json --watch app app/app.js --ignore 'feedback.json'"
   },
   "author": "Ray Villalobos",
   "license": "MIT",
@@ -14,7 +13,7 @@
     "ejs": "^2.4.2",
     "express": "^4.14.0",
     "nodemon": "^1.9.2",
-    "reload": "^0.8.1",
+    "reload": "^0.8.2",
     "socket.io": "^1.4.8"
   }
 }

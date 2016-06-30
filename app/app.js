@@ -18,7 +18,6 @@ app.set('appData', dataFile);
 // Set up globals
 app.locals.connectedUsers = 0;
 app.locals.allSpeakers = dataFile.speakers;
-app.locals.environment = process.env.NODE_ENV;
 
 // Use static directory
 app.use(express.static('./app/public'));
