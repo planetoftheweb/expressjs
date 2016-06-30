@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var reload = require('reload');
 var http = require('http');
-var dataFile = require('./data/data.json');
+var dataFile = require(path.join(__dirname, 'data/data.json'));
 
 // Set up server
 var app = express();

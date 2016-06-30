@@ -4,7 +4,7 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "./app/app.js",
   "scripts": {
-    "start": "NODE_ENV=development nodemon -e css,ejs,js,json --watch app app/app.js --ignore 'feedback.json'",
+    "start": "NODE_ENV=development PORT=8000 nodemon -e css,ejs,js,json --watch app app/app.js --ignore 'feedback.json' ",
     "prod": "NODE_ENV=production nodemon app/app.js"
   },
   "author": "Ray Villalobos",
