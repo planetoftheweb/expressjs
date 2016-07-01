@@ -9,6 +9,7 @@
   "author": "Ray Villalobos",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.4.2",
     "express": "^4.14.0",
     "reload": "^1.0.0"
   }
