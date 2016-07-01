@@ -78,13 +78,30 @@
               <li>Those interested in meeting and making a connection with others in the local art scene.</li>
             </ul>
           </article><!-- article -->
+
+          <article class="sidebar">
+            <h1 class="sidebar-title">Artwork on display</h1>
+            <p class="sidebar-body">While you attend the conference, head over to our gallery where you can check out some of the work from our speakers.</p>
+            <div class="pixgrid clearfix">
+              <% if (artwork.length > 0) { %>
+              <% for (i=0; i< artwork.length; i++) { %>
+                  <img src="/images/artwork/<%= artwork[i] %>" alt="Artwork <%= i %>">
+              <% } %>
+              <% } %>
+            </div>
+          </article>
+
         </aside><!-- secondary -->
       </div>
     </div><!-- container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-    <script src="/js/pixgrid.js"></script>
+    <% if(typeof artwork !== "undefined") { %>
+      <script src="/js/pixgrid.js"></script>
+    <% } %>
+
+
     <script src="/reload/reload.js"></script>
   </body>
 </html>
