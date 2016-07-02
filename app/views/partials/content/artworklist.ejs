@@ -1,0 +1,11 @@
+<article class="sidebar">
+  <h1 class="sidebar-title">Artwork on display</h1>
+  <p class="sidebar-body">While you attend the conference, head over to our gallery where you can check out some of the work from our speakers.</p>
+  <div class="pixgrid clearfix">
+    <% if (artwork.length > 0) { %>
+    <% for (i=0; i< artwork.length; i++) { %>
+        <img src="/images/artwork/<%= artwork[i] %>" alt="Artwork <%= i %>">
+    <% } %>
+    <% } %>
+  </div>
+</article>

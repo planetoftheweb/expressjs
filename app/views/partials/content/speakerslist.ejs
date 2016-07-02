@@ -1,0 +1,16 @@
+<article class="speakerslist">
+  <div class="container">
+    <div class="row">
+        <% speakers.forEach(function(item) { %>
+        <div class="col-sm-8">
+          <h3 class="speakerslist-title"><%= item.title %></h3>
+          <h5 class="speakerslist-name">with <a href="/speakers/<%= item.shortname %>"><%= item.name %></a></h5>
+          <p class="speakerslist-info"><a href="/speakers/<%= item.shortname %>">
+            <img class="speakerslist-img img-circle pull-left" src="/images/speakers/<%= item.shortname %>_tn.jpg" alt="Photo of <%= item.name %>"></a>
+            <%= item.summary %>
+          </a></p>
+        </div>
+        <%  }); %>
+    </div><!-- row -->
+  </div><!-- container -->
+</article>
