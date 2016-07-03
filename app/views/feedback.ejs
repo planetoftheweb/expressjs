@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body id="<%= pageID %>">
+    <% include partials/template/header.ejs %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="feedback-form-title">Send us feedback</h1>
+          <form class="feedback-form">
+            <div class="form-group">
+              <label for="feedback-form-name">Name</label>
+              <input type="text" class="form-control" id="feedback-form-name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+              <label for="feedback-form-title">Title</label>
+              <input type="text" class="form-control" id="feedback-form-title" placeholder="Title of your feedback">
+            </div>
+
+            <div class="form-group">
+                <label for="feedback-form-message">Message</label>
+                <textarea type="text" placeholder="Enter your message, then hit the submit"  class="form-control" id="feedback-form-message" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default pull-right">Submit</button>
+          </form>
+        </div><!-- primary -->
+        <aside class="col-sm-8">
+          <div class="maincontent feedback">
+              <h2 class="article-title">Recent Feedback</h2>
+              <div class="feedback-messages"></div>
+          </div>
+        </aside><!-- secondary -->
+      </div>
+    </div><!-- container -->
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>
