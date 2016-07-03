@@ -22,6 +22,9 @@
               <ul class="dropdown-menu">
                 <li><a href="/speakers">All Speakers</a></li>
                 <li role="separator" class="divider"></li>
+                <% allSpeakers.forEach(function(item) { %>
+                  <li><a href="/speakers/<%= item.shortname %>"><%= item.name %></a></li>
+                <% }); %>
               </ul>
           </li>
         </ul><!-- nav -->
