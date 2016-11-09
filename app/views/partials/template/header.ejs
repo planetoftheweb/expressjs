@@ -1,0 +1,36 @@
+<header>
+  <div class="jumbotron hidden-xs">
+  </div><!-- jumbotron -->
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href="/" class="navbar-brand">Roux Meetups</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+            <li><a href="/speakers" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Speakers <span class="caret"><span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/speakers">All Speakers</a></li>
+                <li role="separator" class="divider"></li>
+                <% allSpeakers.forEach(function(item) { %>
+                  <li><a href="/speakers/<%= item.shortname %>"><%= item.name %></a></li>
+                <% }); %>
+              </ul>
+          </li>
+          <li><a href="/feedback">Feedback</a></li>
+          <li><a href="/chat">Chat</a></li>
+        </ul><!-- nav -->
+      </div><!-- navbar-collapse -->
+    </div><!-- container -->
+  </nav>
+</header>

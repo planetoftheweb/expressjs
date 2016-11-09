@@ -4,8 +4,15 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js"
+    "start": "nodemon -e css,ejs,js,json --watch app --ignore feedback.json"
   },
   "author": "Ray Villalobos",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "reload": "^1.0.0",
+    "socket.io": "^1.4.8"
+  }
 }
