@@ -10,5 +10,20 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosamsam/expressjs.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "nodejs",
+    "routing"
+  ],
+  "bugs": {
+    "url": "https://github.com/hosamsam/expressjs/issues"
+  },
+  "homepage": "https://github.com/hosamsam/expressjs#readme"
 }
