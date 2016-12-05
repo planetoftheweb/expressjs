@@ -139,7 +139,10 @@ app.get('/speakers/:id',function(request, response) {
                 </li>
                 <li class="work">
                     <ul>
-                        <li>${speaker.artworks}</li>
+                        <li><img src="${speaker.artwork[0]}"></li>
+                        <li><img src="${speaker.artwork[1]}"></li>
+                        <li><img src="${speaker.artwork[2]}"></li>
+                        <li><img src="${speaker.artwork[3]}"></li>
                     </ul>
                 </li>
             </ul>
