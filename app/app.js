@@ -155,6 +155,7 @@ app.get('/speakers/:id',function(request, response) {
 
 var server = app.listen(app.get('port'), function() {
   console.log('Listening on port '+ app.get('port'));
+  console.log('testing Push / pull command line');
 });
 
 
