@@ -2,11 +2,12 @@
 // testing CLI pull request
 
 
-
+var info = require('./modules/funcs').info;
 var express = require('express');
 var app = express();
 var mydate = require('./data/data.json');
 
+console.log(info.lover1);
 
 // set our environent variable
 
