@@ -8,6 +8,8 @@ var app = express();
 var mydate = require('./data/data.json');
 var fs = require('fs');
 
+
+
 var pageData;
 fs.readFile('test.html', function(err,data){
     pageData = data.toString();
@@ -19,6 +21,7 @@ console.log(info.lover1);
 app.set('port', process.env.PORT || 3000);
 app.set('appData', pageData);
 
+app.use(express.static('app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/speakers'));
 app.use(require('./routes/page'));

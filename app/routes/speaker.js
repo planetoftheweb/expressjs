@@ -45,7 +45,11 @@ router.get('/speakers/:id',function(request, response) {
                 background-color: #eee;
                 border: 1px solid #ccc;
                 border-radius: 5px;
-                float: left
+                float: left;
+                
+            }
+            li {
+                display: inline-block
             }
         </style>
     </head>
@@ -55,7 +59,8 @@ router.get('/speakers/:id',function(request, response) {
             <h4>${speaker.title}</h4>
         </section><br>
         <div class="container">
-        <a href="/speakers">back to speakers page</a> 
+        <a href="/speakers">back to speakers page</a>
+        <img src="/images/speakers/${speaker.name}.jpg"> 
         ${speaker.summary}<hr><br><div>
         <section id="work">
             <div class="container">
@@ -67,10 +72,10 @@ router.get('/speakers/:id',function(request, response) {
                 </li>
                 <li class="work">
                     <ul>
-                        <li><img src="${speaker.artwork[0]}"></li>
-                        <li><img src="${speaker.artwork[1]}"></li>
-                        <li><img src="${speaker.artwork[2]}"></li>
-                        <li><img src="${speaker.artwork[3]}"></li>
+                        <li><img src="/images/artwork/${speaker.artwork[0]}"></li>
+                        <li><img src="/images/artwork/${speaker.artwork[1]}"></li>
+                        <li><img src="/images/artwork/${speaker.artwork[2]}"></li>
+                        <li><img src="/images/artwork/${speaker.artwork[3]}"></li>
                     </ul>
                 </li>
             </ul>

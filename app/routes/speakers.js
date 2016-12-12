@@ -7,6 +7,7 @@ router.get('/speakers', function(req, res) {
       speaker += `
         <tr>
           <td>${info.title}</td>
+          <td><img src="/images/speakers/${info.artwork[0]}"></td>
           <td><a href="/speakers/${mydate.speakers.indexOf(info)+1}">${info.name}</a></td>
           <td>${info.summary}</td>
         </tr>
