@@ -1,35 +1,37 @@
-// |======| To learn new technologies => spend your time on reading its documentation |======|
-// testing CLI pull request
+//  To learn new technologies => spend your time on reading its documentation
+// Import events module
 
 
-var info = require('./routes/funcs').info;
-var express = require('express');
-var app = express();
-var mydate = require('./data/data.json');
-var fs = require('fs');
+let info = require('./routes/funcs').info;
+let express = require('express');
+let app = express();
+let mydata = require('./data/data.json');
+let fs = require('fs');
 
 
 
-var pageData;
-fs.readFile('test.html', function(err,data){
-    pageData = data.toString();
-});
-console.log(info.lover1);
 
-// set our environent variable
-
+console.log("["+info.lover1+"] don't love ["+ info.lover2+"] anymore!");
+app.use(express.static('./public'));
+// set our environment variable
 app.set('port', process.env.PORT || 3000);
-app.set('appData', pageData);
+app.set("view engine", "ejs");
+app.set('views', "./app/public/templates");
 
-app.use(express.static('app/public'));
+
+app.locals.jsonData = mydata;
+
+
 app.use(require('./routes/index'));
 app.use(require('./routes/speakers'));
 app.use(require('./routes/page'));
 app.use(require('./routes/speaker'));
 
-var server = app.listen(app.get('port'), function() {
-  console.log('Listening on port '+ app.get('port'));
-  console.log('testing Push / pull command line');
+
+app.listen(app.get('port'), function(err) {
+    if(err) throw  err;
+    console.log('Listening on port: '+app.get('port'));
+
 });
 
 
