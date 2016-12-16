@@ -4,11 +4,28 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js"
+
+    "start"  : "nodemon app/app.js -w"
   },
   "author": "Ray Villalobos",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.5.5",
     "express": "^4.14.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosamsam/expressjs.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "nodejs",
+    "routing"
+  ],
+  "bugs": {
+    "url": "https://github.com/hosamsam/expressjs/issues"
+  },
+  "homepage": "https://github.com/hosamsam/expressjs#readme"
 }
