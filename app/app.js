@@ -12,7 +12,7 @@ let fs = require('fs');
 
 
 console.log("["+info.lover1+"] don't love ["+ info.lover2+"] anymore!");
-app.use(express.static('./public'));
+
 // set our environment variable
 app.set('port', process.env.PORT || 3000);
 app.set("view engine", "ejs");
@@ -21,7 +21,7 @@ app.set('views', "./app/public/templates");
 
 app.locals.jsonData = mydata;
 
-
+app.use(express.static('./app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/speakers'));
 app.use(require('./routes/page'));
