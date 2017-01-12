@@ -3,13 +3,14 @@
 <html lang="en">
   <head>
     <% include ../partials/head.ejs %>
+
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
 
   <% include ../partials/header.ejs %>
-<% include /partials/navbar.ejs %>
+<% include ../partials/navbar.ejs %>
 
 <!--- === navbar ==== ->
 
@@ -44,54 +45,14 @@
     <h3>Artwork on display</h3>
     <p>While you attend the conference, head over to our gallery where you can check out some of the work from our speakers.</p>
 
+            <% speakers.forEach(function (item) {
+                for(i=0;i<item.artwork.length;i++) {
+                %>
+        <img src="/images/artwork/<%= item.artwork[i]  %>" alt="<%= item.artwork[i]  %>" width="80">
+            <%}}) %>
 
 </aside>
 </section>
-
-      <!-- START THE FEATURETTES -->
-
-  <div class="container">
-
-
-
-  <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="/images/speakers/Riley_Rewington.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="/images/speakers/Lorenzo_Garcia.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="/images/speakers/Hillary_Goldwynn.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-  </div>
-      <!-- /END THE FEATURETTES -->
-
 
       <!-- FOOTER -->
       <footer>
@@ -112,5 +73,6 @@
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="/reload/reload.js"></script>
   </body>
 </html>

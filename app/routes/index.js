@@ -1,11 +1,14 @@
 let express = require('express');
 let router = express.Router();
+let speakersData = require('../data/data.json');
 
 router.get('/', function(request, response) {
 
 response.render('index', {
 	title : "Node Home Page",
-	description: "NodeJs is great javascript server side language"
+	description: "NodeJs is great javascript server side language",
+	pageId : 'home',
+	speakers : speakersData.speakers
 });
 
 /*	response.send(`

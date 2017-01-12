@@ -3,13 +3,15 @@ let router  = express.Router();
 
 router.get('/speakers', function(req, res) {
   res.render('speakers',{
-      title: "All Speakers",
+      title       : "All Speakers",
       description : "display ALl speakers",
-      speakers: req.app.locals.jsonData.speakers
+      speakers    : req.app.locals.jsonData.speakers,
+      pageId      : 'speakers'
   });
+
 });
 
-
+// console.log this is new label
 module.exports = router;
 
 
