@@ -14,5 +14,8 @@
     "express": "^4.14.0",
     "reload": "^1.0.0",
     "socket.io": "^1.4.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
