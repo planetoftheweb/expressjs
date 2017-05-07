@@ -4,8 +4,7 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "app/app.js",
   "scripts": {
-    "start": "nodemon -e css,js,ejs,json app/app.js -w",
-    "serve": "concurrently \"nodemon -e css,js,ejs,json app/app.js -w\" \"reload -b\""
+
   },
   "author": "Ray Villalobos",
   "license": "MIT",
@@ -23,7 +22,8 @@
   },
   "devDependencies": {
     "concurrently": "^3.1.0",
-    "lazy.js": "^0.4.2"
+    "lazy.js": "^0.4.2",
+    "nodemon": "^1.11.0"
   },
   "repository": {
     "type": "git",
