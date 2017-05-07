@@ -7,8 +7,8 @@ let router = express.Router();
 
 router.get('/chat', (request, response)=>{
 	response.render('chat', {
-		title: 'chat page',
-		description: "NodeJs is great javascript server side language",
+		title: 'let\'s chat together',
+		description: "with runtime chat service.. you can feel the difference",
 		pageId : 'chat',
 	});
 });

@@ -4,7 +4,7 @@ let path = require('path');
 
 router.get('/about', function(req, res) {
     res.render('about', {
-        title       : "About us Page",
+        title       : "Know About Us",
         description : "all you need to get in touch with us",
         pageId      : 'about'
     });

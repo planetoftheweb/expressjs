@@ -1,4 +1,4 @@
-module.exports.info = {
+module.exports = {
     lover1: 'Hosam',
     lover2: 'Shimaa',
     married() {

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+<% include ../partials/header.ejs %>
+<% include ../partials/navbar.ejs %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <br>
+            <p>if you already have an account.</p>
+            <div class="bg-warning padding">
+
+                <form action="" class="form-inline">
+                    <span class="h3">Log In &nbsp; &nbsp;</span>
+                    <div class="form-group">
+                        <input id="login-name" placeholder="name" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input name="login-password" placeholder="password" type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Login</button>
+                </form>
+            </div>
+
+            <h1>Sign up</h1>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="sign-name"> write your name</label>
+                    <input id="sign-name" type="text" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label for="sign-password">write a password</label>
+                    <input id="sign-password" type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success btn-block">submit</button>
+            </form>
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+
+
+</div>
+<script src="/reload/reload.js"></script>
+</body>
+</html>
