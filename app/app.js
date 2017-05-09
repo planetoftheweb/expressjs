@@ -1,4 +1,3 @@
-
 //  To learn new technologies => spend your time on reading its documentation
 // REPL stands for read eval print loop
 // Import events module
@@ -16,7 +15,7 @@ let io = require('socket.io')(ioserver, {serveClient: true});
 
 // connect to mongodb
 let mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/nodeExpress");
+mongoose.connect("mongodb://hosam:hoss161996@ds133281.mlab.com:33281/anode");
 
 mongoose.connection.once('open', function () {
 	console.log("sheer up you are connected successfully");
@@ -84,38 +83,3 @@ io.on('connection', function (socket) {
 // reload the page while developing
 
 reload(ioserver, app);
-
-var express = require('express');
-var reload = require('reload');
-var app = express();
-var dataFile = require('./data/data.json');
-var io = require('socket.io')();
-
-app.set('port', process.env.PORT || 3000 );
-app.set('appData', dataFile);
-app.set('view engine', 'ejs');
-app.set('views', 'app/views');
-
-app.locals.siteTitle = 'Roux Meetups';
-app.locals.allSpeakers = dataFile.speakers;
-
-app.use(express.static('app/public'));
-app.use(require('./routes/index'));
-app.use(require('./routes/speakers'));
-app.use(require('./routes/feedback'));
-app.use(require('./routes/api'));
-app.use(require('./routes/chat'));
-
-var server = app.listen(app.get('port'), function() {
-  console.log('Listening on port ' + app.get('port'));
-});
-
-io.attach(server);
-io.on('connection', function(socket) {
-  socket.on('postMessage', function(data) {
-    io.emit('updateMessages', data);
-  });
-});
-
-reload(server, app);
-

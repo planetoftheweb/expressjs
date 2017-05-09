@@ -4,15 +4,14 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "app/app.js",
   "scripts": {
-
-    "start": "nodemon -e css,ejs,js,json --watch app --ignore feedback.json"
-
+    "start": "heroku",
+    "dev:serve": "nodemon -e css,js,ejs,json app/app.js -w",
+    "serve": "concurrently \"nodemon -e css,js,ejs,json app/app.js -w\" \"reload -b\""
   },
   "author": "Ray Villalobos",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
-
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.5",
     "express": "^4.14.0",
@@ -25,8 +24,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.1.0",
-    "lazy.js": "^0.4.2",
-    "nodemon": "^1.11.0"
+    "lazy.js": "^0.4.2"
   },
   "repository": {
     "type": "git",
@@ -42,11 +40,4 @@
     "url": "https://github.com/hosamsam/expressjs/issues"
   },
   "homepage": "https://github.com/hosamsam/expressjs#readme"
-
-    "ejs": "^2.4.2",
-    "express": "^4.14.0",
-    "reload": "^1.0.0",
-    "socket.io": "^1.4.8"
-  }
-
 }
