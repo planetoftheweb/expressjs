@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Created by Hossam Elnabawy on 12/01/2017.
  */
@@ -43,25 +42,10 @@ router.get('/feedback/:num', function(req, res){
 });
 
 function parse(obj, param) {
-	var newObj = JSON.parse(obj);
+	let newObj = JSON.parse(obj);
 	newObj = newObj[param];
 
 	return JSON.stringify(newObj);
 }
 
 module.exports = router;
-=======
-var express = require('express');
-var router = express.Router();
-
-router.get('/feedback', function(req, res) {
-
-  res.render('feedback', {
-    pageTitle: 'Feedback',
-    pageID: 'feedback'
-  });
-
-});
-
-module.exports = router;
->>>>>>> master

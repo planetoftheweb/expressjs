@@ -4,7 +4,7 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "app/app.js",
   "scripts": {
-    "start": "heroku",
+    "start": "node app/app.js",
     "dev:serve": "nodemon -e css,js,ejs,json app/app.js -w",
     "serve": "concurrently \"nodemon -e css,js,ejs,json app/app.js -w\" \"reload -b\""
   },
