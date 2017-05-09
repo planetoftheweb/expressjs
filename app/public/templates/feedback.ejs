@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+<% include ../partials/header.ejs %>
+<% include ../partials/navbar.ejs %>
+
+<section id="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6  ">
+                <h2 class="text-primary">Most recent feedbacks</h2>
+                <hr>
+                <div class="most-recent">
+
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 feedback-form">
+                <h2 class="text-danger">Add your feedback</h2>
+                <hr>
+                <form action="" method="post" id="form-feedback">
+                    <div class="form-group">
+                        <label for="feedname">your name</label>
+                        <input type="text" id="feedname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedmsg">your message</label>
+                        <textarea name="feedmsg" id="feedmsg" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg btn-block">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section><br><br><br>
+
+
+<footer style="padding: 10px 0">
+    <div class="container text-center text-muted">
+        All right Reserved&copy; 2017
+    </div>
+</footer>
+<% if (pageId == "feedback"){ %>
+    <script src="/js/data-feedback.js"></script>
+<%}%>
+<script src="/reload/reload.js"></script>
+</body>
+</html>

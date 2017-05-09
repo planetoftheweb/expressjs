@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+<% include ../partials/header.ejs %>
+<% include ../partials/navbar.ejs %>
+<section id="chat-section">
+
+
+<div class="container">
+
+    <!--chat name form -->
+    <section class="center-block jumbotron text-center name-checker">
+        <form action="">
+            <h2 class="chat-name-title">Enter Your name</h2>
+            <input type="text" class="chat-message-name" placeholder="type your name ..">
+        </form>
+    </section>
+
+    <section class="text-center" id="name-checked">
+        <h1>Welcome back <span class="text-primary name-checker-found"></span></h1>
+    </section>
+
+    <!--chat Box -->
+    <section id="chat-bot">
+        <div class="chat-title"><h4>ChatBot</h4></div>
+        <div id="chat-body">
+            <ul id="chat-messages">
+                <!-- placeholder for a single message 
+                <li>
+                    <div class="single-message">
+                    
+                    
+                    <div class="person-avatar">
+                            <div class="img-placeholder"></div>
+                            <span class="person-name">&#9975; Hosam</span>
+                        </div>
+                    <div class="message-body">
+                        
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maxime necessitatibus possimus quae voluptatem!</p>
+                         <div class="message-date">1/2/1976</div>
+                    </div>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+        <div id="chat-form">
+
+            <input type="text" class="chat-message-control" placeholder="type you message">
+            <button type="button" class="chat-message-send">send</button>
+        </div>
+    </section>
+
+
+    <br><br><br><br>
+</div>
+</section>
+<% if(pageId == 'chat') {%>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>-->
+<script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+
+<%}%>
+<script src="/reload/reload.js"></script>
+</body>
+</html>

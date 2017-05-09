@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+
+<body>
+<!-- Marketing messaging and featurettes
+    ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<% include ../partials/header.ejs %>
+<% include ../partials/navbar.ejs %>
+<br><br>
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <% for (i = 0; i < speakers.length;i++) { %>
+        <div class="col-lg-4">
+            <div class="speaker-image">
+                <img class="img-circle" src="/images/speakers/<%= speakers[i].shortname %>_tn.jpg"
+                     alt="Generic placeholder image" width="150" height="150">
+            </div>
+            <h2><%= speakers[i].name %></h2>
+            <p><%= speakers[i].summary %></p>
+            <p><a class="btn btn-default" href="/speakers/<%= i + 1 %>" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <% } %>
+    </div><!-- /.row -->
+</div>
+<script src="/reload/reload.js"></script>
+</body>
+</html>

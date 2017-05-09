@@ -4,11 +4,40 @@
   "description": "Files for my Building a Website with Node & ExpressJS course on Lynda.com",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js"
+    "start": "node app/app.js",
+    "dev:serve": "nodemon -e css,js,ejs,json app/app.js -w",
+    "serve": "concurrently \"nodemon -e css,js,ejs,json app/app.js -w\" \"reload -b\""
   },
   "author": "Ray Villalobos",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.0"
-  }
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "express-session": "^1.15.2",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.8.5",
+    "passport": "^0.3.2",
+    "reload": "^1.1.0",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lazy.js": "^0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosamsam/expressjs.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "nodejs",
+    "routing"
+  ],
+  "bugs": {
+    "url": "https://github.com/hosamsam/expressjs/issues"
+  },
+  "homepage": "https://github.com/hosamsam/expressjs#readme"
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head.ejs %>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+<% include ../partials/header.ejs %>
+<% include ../partials/navbar.ejs %>
+
+<!--- === navbar ==== ->
+
+
+<!-- articles -->
+<section class="container">
+    <br>
+    <article class="col-md-8 col-sn-12">
+        <div class="">
+            <h2>Who are we?</h2>
+            <p>The Roux Academy gets thousands of submissions every year for artists interesting in participating in the
+                CAC exhibits, and selects approximately 200 distinct pieces of contemporary art for display in their
+                collective exhibit. In addition, 12 individuals are honored as Featured Artists - each being granted his
+                or her own exhibit hall to display entire collections or themed pieces.</p>
+            <p>Each Featured Artist has an opportunity to speak at one of our meetups and share his or her vision,
+                perspective, and techniques with attendees on a more personal level than at our large conference. It is
+                truly an honor to be a CAC Featured Artist and many past students artists who were featured at CAC have
+                gone on to brilliant careers in art.</p>
+            <h2>Get Busy!</h2>
+            <p>If you want to keep up with what's going on with the group, join our meetup group, follow us on twitter.
+                If you're in FaceBook, you can also join our FaceBook group.</p>
+            <h2>Who should come?</h2>
+            <ul>
+                <li>Anybody interested in art and the creative industry</li>
+                <li>Painters, sculptors, photographers and graphic artists</li>
+                <li>Those interested in meeting and making a connection with others in the local art scene.</li>
+            </ul>
+
+        </div>
+    </article>
+    <br>
+    <aside class="col-sm-4 col-sm-invisible">
+        <h3>Who should come?any ideas...</h3>
+        <ul>
+            <li>Anybody interested in art and the creative industry</li>
+            <li>Painters, sculptors, photographers and graphic artists</li>
+            <li>Those interested in meeting and making a connection with others in the local art scene.</li>
+        </ul>
+        <h3>Artwork on display</h3>
+        <p>While you attend the conference, head over to our gallery where you can check out some of the work from our
+            speakers.</p>
+
+        <% speakers.forEach(function (item) {
+        for(i = 0;i < item.artwork.length;i++) {
+        %>
+        <img src="/images/artwork/<%= item.artwork[i] %>" alt="<%= item.artwork[i] %>" width="80">
+        <% }}) %>
+
+    </aside>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="/reload/reload.js"></script>
+</body>
+</html>
