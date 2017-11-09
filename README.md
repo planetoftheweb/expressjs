@@ -1,10 +1,15 @@
+This is the repository for my course, Building a Website with Node.js and Express.js on LinkedIn Learning and Lynda.com.
+
+tutorial, training, linkedinlearning, lynda, lynda-com, rayvillalobos
+
 # Building a Website with Node.js and Express.js
 This is the repository for my course Building a Website with Node.js and Express.js. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js) and [Lynda.com](https://www.lynda.com/Express-js-tutorials/Building-Website-Node-js-Express-js/502310-2.html)
 
 [![Building a Website with Node.js and Express.js](https://media-exp2.licdn.com/media-proxy/ext?w=1200&h=675&f=n&hash=e1P0u0YoBCeiMKFIjsJVxCTwgbU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-kWyep-9WfZXfresbfZLSiol8TeCwAkgExfeuoQzTjFI69LcLmY4Yx3A)](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js)
 
-JavaScript is the language for adding interactivity to a website, but there's so much more it can do. Enter Node.js and Express.js, two technologies that extend the capabilities of JavaScript. The Node platform allows you to develop server-side applications with JavaScript that you can then easily publish as websites with the Express framework. In this course, Ray Villalobos walks through the entire process of creating a website on a server with Node.js and Express.js. After going over the installation process, Ray shows how to build a basic application, control the state of an application with routing, and use templates and partials. Then he demonstrates how to quickly structure a site with Express Generator, work with models and views, and publish the final website using Heroku.
+Interested in building JavaScript websites that do more? Node.js and Express.js are a perfect match. Express is a fast, minimalist framework that sits on top of Node.js and allows you to build powerful single- and multi-page web applications and websites.
 
+In this course, Ray Villalobos walks through the process of creating full-featured websites with these technologies. First, find out how to install each package and leverage Node.js features from within Express. Then learn how to build a basic application with templating engines like EJS; create more flexible, modular code with includes and conditional statements; build APIs to manage HTTP requests to add and delete content dynamically; and configure more complex routing. Along the way, Ray implements features like customer feedback forms and real-time live chat, so you can see exactly what Node.js and Express are capable of.
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add `/tree/BRANCH_NAME` to the URL to go to the branch you want to peek at. 
 
