@@ -1,7 +1,3 @@
-This is the repository for my course, Building a Website with Node.js and Express.js on LinkedIn Learning and Lynda.com.
-
-tutorial, training, linkedinlearning, lynda, lynda-com, rayvillalobos
-
 # Building a Website with Node.js and Express.js
 This is the repository for my course Building a Website with Node.js and Express.js. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js) and [Lynda.com](https://www.lynda.com/Express-js-tutorials/Building-Website-Node-js-Express-js/502310-2.html)
 
