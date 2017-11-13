@@ -1,5 +1,5 @@
 # Building a Website with Node.js and Express.js
-This is the repository for my course Building a Website with Node.js and Express.js. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js) and [Lynda.com](https://www.lynda.com/Express-js-tutorials/Building-Website-Node-js-Express-js/502310-2.html)
+This is the repository for my course Building a Website with Node.js and Express.js. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js?trk=insiders_6787408_learning) and [Lynda.com](https://www.lynda.com/Express-js-tutorials/Building-Website-Node-js-Express-js/502310-2.html)
 
 [![Building a Website with Node.js and Express.js](https://media-exp2.licdn.com/media-proxy/ext?w=1200&h=675&f=n&hash=e1P0u0YoBCeiMKFIjsJVxCTwgbU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-kWyep-9WfZXfresbfZLSiol8TeCwAkgExfeuoQzTjFI69LcLmY4Yx3A)](https://www.linkedin.com/learning/building-a-website-with-node-js-and-express-js)
 
