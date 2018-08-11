@@ -1,8 +1,8 @@
-var chatForm = document.forms.chatForm;
+let chatForm = document.forms.chatForm;
 
 if (chatForm) {
-  var chatUsername = document.querySelector('#chat-username');
-  var chatMessage = document.querySelector('#chat-message');
+  let chatUsername = document.querySelector('#chat-username');
+  let chatMessage = document.querySelector('#chat-message');
 
   chatForm.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -16,8 +16,8 @@ if (chatForm) {
 }
 
 function showMessage(data) {
-  var chatDisplay = document.querySelector('.chat-display');
-  var newMessage = document.createElement('p');
+  let chatDisplay = document.querySelector('.chat-display');
+  let newMessage = document.createElement('p');
   newMessage.className = 'bg-success chat-text';
   newMessage.innerHTML = '<strong>' + data.username + '</strong>: ' + data.message;
   chatDisplay.insertBefore(newMessage, chatDisplay.firstChild);
